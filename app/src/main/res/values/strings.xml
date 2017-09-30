@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Simple things</string>
+    <string name="football_question">Do you like football?</string>
+    <string name="player_question">Who is the best football player in your opinion?</string>
+    <string name="rl_best">Robert Lewandowski</string>
+    <string name="lm_best">Leo Messi</string>
+    <string name="cr_best">Cristiano Ronaldo</string>
+    <string name="pp_best">Paul Pogba</string>
+    <string name="are_you_player_question">Do you play football?</string>
+    <string name="your_skills">What are your skills?</string>
+    <string name="go_to_second_view">Next view</string>
+    <string name="no_name">You did not give your name</string>
+    <string name="your_name">Your name</string>
+    <string name="like_football">You like football</string>
+    <string name="dont_like_football">You do not like football</string>
+    <string name="best_player_sentence">Your best player</string>
+    <string name="no_choice_of_the_best_player">You do not selected the best player</string>
+</resources>
