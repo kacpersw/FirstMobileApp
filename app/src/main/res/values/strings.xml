@@ -9,6 +9,9 @@
     <string name="are_you_player_question">Do you play football?</string>
     <string name="your_skills">What are your skills?</string>
     <string name="go_to_second_view">Next view</string>
+    <string name="go_to_first_view">Previous view</string>
+    <string name="go_to_last_view">Last view</string>
+    <string name="go_to_form_view">First view</string>
     <string name="no_name">You did not give your name</string>
     <string name="your_name">Your name</string>
     <string name="like_football">You like football</string>

@@ -18,9 +18,9 @@ public class MainActivity extends Activity {
     public static final String NAME_TEXT = "com.example.kacper.firstapp.MainActivity.NAME_TEXT";
     public static final String DO_YOU_LIKE_FOOTBALL = "com.example.kacper.firstapp.MainActivity.DO_YOU_LIKE_FOOTBALL";
     public static final String BEST_PLAYER = "com.example.kacper.firstapp.MainActivity.BEST_PLAYER";
-    public static final String DO_YOU_PLAY = "";
-    public static final String YOUR_SKILLS = "";
-    public static final String ON_OFF = "";
+    public static final String DO_YOU_PLAY = "com.example.kacper.firstapp.MainActivity.DO_YOU_PLAY";
+    public static final String YOUR_SKILLS = "com.example.kacper.firstapp.MainActivity.YOUR_SKILLS";
+    public static final String ON_OFF = "com.example.kacper.firstapp.MainActivity.ON_OFF";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,13 +62,29 @@ public class MainActivity extends Activity {
 
 
         Switch doYouPlaySwitch = findViewById(R.id.areYouPlayerQuestion);
-        boolean playerSwitchValue = doYouPlaySwitch.isChecked();
+        boolean playerSwitchValue;
+        try{
+            playerSwitchValue = doYouPlaySwitch.isChecked();
+        }catch(Exception e){
+            playerSwitchValue = false;
+        }
+
 
         RatingBar yourSkillsRatingBar = findViewById(R.id.yourSkills);
-        float yourSkillsValue = yourSkillsRatingBar.getRating();
+        float yourSkillsValue;
+        try{
+            yourSkillsValue = yourSkillsRatingBar.getRating();
+        }catch(Exception e){
+            yourSkillsValue = 0;
+        }
 
         ToggleButton onOffButton = findViewById(R.id.onOff);
-        boolean onOffButtonValue = onOffButton.isChecked();
+        boolean onOffButtonValue;
+        try{
+            onOffButtonValue = onOffButton.isChecked();
+        }catch(Exception e){
+            onOffButtonValue = false;
+        }
 
         Intent nextActivityIntent = new Intent(this, ResultOfMainActivity.class);
 
