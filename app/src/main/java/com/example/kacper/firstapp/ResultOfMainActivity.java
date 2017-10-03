@@ -5,12 +5,15 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class ResultOfMainActivity extends Activity {
 
     private Intent mainActivityIntent;
+    private Button goToNextViewBtn;
+    private Button goToPreviousViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,22 @@ public class ResultOfMainActivity extends Activity {
         setContentView(R.layout.activity_result_of_main);
 
         mainActivityIntent = getIntent();
+
+        goToNextViewBtn = findViewById(R.id.goToNextViewBtn);
+        goToNextViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToCyclesView(view);
+            }
+        });
+
+        goToPreviousViewBtn = findViewById(R.id.goToPreviousViewBtn);
+        goToPreviousViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToMainActivity(view);
+            }
+        });
 
         getDataFromMainActivity();
     }

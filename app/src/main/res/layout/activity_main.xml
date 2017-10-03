@@ -16,20 +16,23 @@
             android:id="@+id/nameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/give_name"/>
+            android:hint="@string/give_name"
+            android:textSize="25dp"/>
 
         <CheckBox
             android:id="@+id/doYouPlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/football_question" />
+            android:text="@string/football_question"
+            android:textSize="25dp"/>
 
         <TextView
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:text="@string/player_question"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <RadioGroup
             android:id="@+id/bestFootballPlayer"
@@ -39,22 +42,26 @@
             <RadioButton
                 android:text="@string/rl_best"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
 
             <RadioButton
                 android:text="@string/lm_best"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
 
             <RadioButton
                 android:text="@string/cr_best"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
 
             <RadioButton
                 android:text="@string/pp_best"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
 
         </RadioGroup>
 
@@ -71,7 +78,8 @@
             <TextView
                 android:text="@string/are_you_player_question"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
 
         </LinearLayout>
 
@@ -79,7 +87,8 @@
             android:text="@string/your_skills"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"/>
+            android:paddingTop="10dp"
+            android:textSize="25dp"/>
 
         <RatingBar
             android:id="@+id/yourSkills"
@@ -97,11 +106,11 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/sendDataBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:onClick="sendData"
                 android:text="@string/go_to_second_view" />
         </RelativeLayout>
 

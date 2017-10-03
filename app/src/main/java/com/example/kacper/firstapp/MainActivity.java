@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -22,11 +23,23 @@ public class MainActivity extends Activity {
     public static final String YOUR_SKILLS = "com.example.kacper.firstapp.MainActivity.YOUR_SKILLS";
     public static final String ON_OFF = "com.example.kacper.firstapp.MainActivity.ON_OFF";
 
+    private Button nextViewBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        nextViewBtn = findViewById(R.id.sendDataBtn);
+        nextViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendData(view);
+            }
+        });
+
     }
+
 
     public void sendData(View view){
         EditText nameText = findViewById(R.id.nameText);
@@ -57,7 +70,6 @@ public class MainActivity extends Activity {
             nameOfBestPlayer = String.valueOf(bestPlayerRadioButton.getText());
         }catch (Exception e){
             nameOfBestPlayer = "You don't selected the best player";
-            nameOfBestPlayer = null;
         }
 
 

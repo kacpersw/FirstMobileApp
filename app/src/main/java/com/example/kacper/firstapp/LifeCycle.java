@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.sql.Timestamp;
@@ -12,12 +13,20 @@ import java.sql.Timestamp;
 public class LifeCycle extends Activity {
 
     private String log;
+    private Button goToFirstViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle);
 
+        goToFirstViewBtn=findViewById(R.id.goToFirstViewBtn);
+        goToFirstViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToFirstView(view);
+            }
+        });
         updateLogView("onCreate");
     }
 

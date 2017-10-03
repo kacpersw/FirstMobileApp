@@ -15,32 +15,38 @@
         <TextView
             android:id="@+id/nameResult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <TextView
             android:id="@+id/doYouLikeFootballResult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <TextView
             android:id="@+id/bestPlayerResult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <TextView
             android:id="@+id/areYouPlayerResult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <TextView
             android:id="@+id/yourSkillsResult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <TextView
             android:id="@+id/onOffResult"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -48,19 +54,19 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/goToPreviousViewBtn"
                 android:text="@string/go_to_first_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToMainActivity"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"/>
 
             <Button
+                android:id="@+id/goToNextViewBtn"
                 android:text="@string/go_to_last_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goToCyclesView"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true" />
 
